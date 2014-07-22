@@ -3,17 +3,16 @@ def title_case(title)
 
   title = title.split(" ")
   new_title = []
-
-  i = 0
+  #i = 0
   title.each do |word|
     if title.index(word) == 0
       new_title << title[0].capitalize! #first word in tittle will be capitalized
     else
-      new_title << word
+      new_title << title
+      # include?
     end
   end
-
-  new_title = new_title.join(" ")
 end
 
 puts title_case("game of thrones")
+
